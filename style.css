@@ -86,3 +86,33 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #45a749;
 }
+
+/* Agregamos una animación de desvanecimiento para las tareas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#task-list li {
+  /* Resto del código anterior */
+  animation: fadeIn 0.3s ease; /* Aplicamos la animación de desvanecimiento a las tareas */
+}
+
+/* Agregamos una animación de deslizamiento para el formulario */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+form {
+  /* Resto del código anterior */
+  animation: slideIn 0.3s ease; /* Aplicamos la animación de deslizamiento al formulario */
+}
