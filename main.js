@@ -11,6 +11,18 @@ function addTask(event) {
     if (taskText !== '') {
         const taskItem = document.createElement('li');
         taskItem.innerText = taskText;
+
+        // Creamos un botón para eliminar la tarea
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = 'Eliminar';
+        deleteButton.addEventListener('click', () => {
+            taskList.removeChild(taskItem);
+        });
+
+        // Agregamos el botón al elemento de la tarea
+        taskItem.appendChild(deleteButton);
+
+        // Agregamos la tarea a la lista
         taskList.appendChild(taskItem);
         taskInput.value = '';
     }
