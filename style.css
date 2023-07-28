@@ -116,3 +116,25 @@ form {
   /* Resto del código anterior */
   animation: slideIn 0.3s ease; /* Aplicamos la animación de deslizamiento al formulario */
 }
+
+/* El código anterior sigue igual */
+
+/* Estilos para el botón de exportar */
+.export-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.export-button:hover {
+  background-color: #45A749;
+}
+
+/* Resto del código anterior */

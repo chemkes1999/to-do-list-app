@@ -44,8 +44,11 @@ function exportTasksToCSV() {
     document.body.removeChild(link);
 }
 
-// Agregamos un evento para exportar las tareas cuando se haga clic en un botón
+// Crear el botón de exportar
 const exportButton = document.createElement('button');
 exportButton.innerText = 'Exportar CSV';
 exportButton.addEventListener('click', exportTasksToCSV);
+exportButton.classList.add('export-button'); // Agregamos la clase 'export-button' al botón
+
+// Agregamos el botón al contenedor #app
 document.getElementById('app').appendChild(exportButton);
