@@ -25,6 +25,27 @@ function addTask(event) {
         // Agregamos la tarea a la lista
         taskList.appendChild(taskItem);
         taskInput.value = '';
+        mostrarAlertaSucces()
+    } else {
+        mostrarAlertaError()
+    }
+
+    function mostrarAlertaSucces() {
+        Swal.fire({
+            title: 'Tarea agregada',
+            text: 'Se ha agregado la tarea.',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+        });
+    }
+
+    function mostrarAlertaError() {
+        Swal.fire({
+            title: '¡Error!',
+            text: 'No puede estar vacio el nombre de la tarea.',
+            icon: 'error', // Cambiamos el icono a 'error'
+            confirmButtonText: 'Ok'
+        });
     }
 }
 
