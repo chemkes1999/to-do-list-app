@@ -25,15 +25,15 @@ function addTask(event) {
     // Agregamos la tarea a la lista
     taskList.appendChild(taskItem);
     taskInput.value = "";
-    mostrarAlertaSucces();
+    mostrarAlertaSucces(taskText);
   } else {
-    mostrarAlertaError();
+    mostrarAlertaError(taskText);
   }
 
-  function mostrarAlertaSucces() {
+  function mostrarAlertaSucces(taskText) {
     Swal.fire({
       title: "Tarea agregada",
-      text: "Se ha agregado la tarea.",
+      text: "Se ha agregado la tarea "+taskText,
       icon: "success",
       confirmButtonText: "Ok",
     });
