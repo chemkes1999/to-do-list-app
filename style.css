@@ -1,143 +1,143 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #7ba181; /* Cambia este valor para el color de fondo que desees */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7ba181; /* Cambia este valor para el color de fondo que desees */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #app {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 h1 {
-  text-align: center;
-  color: #333;
-  font-size: 28px;
-  line-height: 1.4;
-  margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 30px;
 }
 
 #task-list {
-  list-style: none;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 20px;
-  background-color: #f9f9f9; /* Color de fondo para la lista de tareas */
+    list-style: none;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Color de fondo para la lista de tareas */
 }
 
 #task-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  transition: background-color 0.3s; /* Transición para cambios de color de fondo */
-  animation: fadeIn 0.3s ease; /* Aplicamos la animación de desvanecimiento a las tareas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s; /* Transición para cambios de color de fondo */
+    animation: fadeIn 0.3s ease; /* Aplicamos la animación de desvanecimiento a las tareas */
 }
 
 #task-list li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .delete-button {
-  background-color: #ff6347;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Transición para cambios de color de fondo */
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para cambios de color de fondo */
 }
 
 .delete-button:hover {
-  background-color: #ff4c29;
+    background-color: #ff4c29;
 }
 
 form {
-  display: flex;
-  margin-top: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin-top: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"] {
-  flex: 1;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px 0 0 3px;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
 }
 
 button[type="submit"] {
-  flex-shrink: 0;
-  padding: 5px 10px;
-  border: none;
-  background-color: #4caf50;
-  color: #fff;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Transición para cambios de color de fondo */
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para cambios de color de fondo */
 }
 
 button[type="submit"]:hover {
-  background-color: #45a749;
+    background-color: #45a749;
 }
 
 /* Agregamos una animación de desvanecimiento para las tareas */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Agregamos una animación de deslizamiento para el formulario */
 @keyframes slideIn {
-  from {
-    transform: translateY(50px);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 form {
-  /* Resto del código anterior */
-  animation: slideIn 0.3s ease; /* Aplicamos la animación de deslizamiento al formulario */
+    /* Resto del código anterior */
+    animation: slideIn 0.3s ease; /* Aplicamos la animación de deslizamiento al formulario */
 }
 
 /* El código anterior sigue igual */
 
 /* Estilos para el botón de exportar */
 .export-button {
-  display: block;
-  margin: 20px auto;
-  padding: 12px 24px;
-  font-size: 18px;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  background-color: #8bc34a; /* Un tono verde que combina con el fondo */
-  color: #fff;
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #8bc34a; /* Un tono verde que combina con el fondo */
+    color: #fff;
 }
 
 .export-button:hover {
-  background-color: #7cb342;
+    background-color: #7cb342;
 }
 
 /* Resto del código anterior */
 #task-list li:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
