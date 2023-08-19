@@ -48,6 +48,7 @@ h1 {
 #task-list li:last-child {
     border-bottom: none;
 }
+
 #task-list li:hover {
     background-color: #f0f0f0; /* Light gray background on hover */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -142,6 +143,7 @@ form {
 .export-button:hover {
     background-color: #7cb342;
 }
+
 input[type="text"]::placeholder {
     color: #999;
     font-style: italic;
@@ -151,6 +153,7 @@ input[type="text"]::placeholder {
 #task-list li:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+
 /* Example of adjusting padding on smaller screens */
 @media (max-width: 600px) {
     #app {
